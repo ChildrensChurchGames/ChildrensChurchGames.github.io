@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Children's Church Games</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+			  src="http://code.jquery.com/jquery-3.5.1.min.js"
+			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+			  crossorigin="anonymous"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/question_form.js"></script>
+
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Children's Church Games Logo">
+      </a>
+      <h1>Children's Church Games</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="contribute.html">Contribute</a>
+      </nav>
+    </header>
+    <main class="contribute-main">
+      <section class="contribute-contribute">
+        <h2 id="contribute">How can I help?</h2>
+        <p>The best way for you to help is to submit questions for the questions database. You can submit questions via the form below (perfered method) or you can <a href="mailto:childrens.church.games.1611@gmail.com?subject=Question%20Submission&body=Question%3A%0D%0A%0D%0AAnswer%3A">submit a question via email.</a></p>
+
+        <iframe name="question_hidden_iframe" id="question_hidden_iframe" onload="question_iframe_onload();" src="about:blank"></iframe>
+
+        <p id='question_submitted' name='question_submitted'>Thank you for your comment. We will get back to you when we have the chance.</p>
+
+        <form class="form" name="question_form" id="question_form" target="question_hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSdf4yjj_qOtrWIPfqruTwOegwE9j4ei5MdxKdgQRDhzcJEzeg/formResponse?">
+          <div class= "form_container">
+            <label class="form_label" for="entry.809144564">Question</label>
+            <input class="form_input" type="text" name="entry.809144564" id="entry.809144564">
+
+            <label class="form_label" for="entry.187849648">Correct Answer</label>
+            <input class="form_input" type="text" name="entry.187849648" id="entry.187849648">
+
+            <label class="form_label" for="entry.1062808255">Incorrect Answer 1</label>
+            <input class="form_input" type="text" name="entry.1062808255" id="entry.1062808255">
+
+            <label class="form_label" for="entry.22923817">Incorrect Answer 2</label>
+            <input class="form_input" type="text" name="entry.22923817" id="entry.22923817">
+
+            <label class="form_label" for="entry.1592649018">Incorrect Answer 3</label>
+            <input class="form_input" type="text" name="entry.1592649018" id="entry.1592649018">
+
+            <label class="form_label" for="entry.1578457137">Difficulty</label>
+            <input class="form_input" type="number" name="entry.1578457137" id="entry.1578457137" min=1 max=10 value=1>
+
+            <label class="form_label">Categories (select at least one)</label>
+
+            <div class="form_checkbox_container">
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Old Testament">
+              <label class="form_checkbox_label">Old Testament</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Families">
+              <label class="form_lcheckbox_abel">Families</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Patriarchs">
+              <label class="form_checkbox_label">Patriarchs</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Friendship">
+              <label class="form_checkbox_label">Friendship</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Kings">
+              <label class="form_checkbox_label">Kings</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Life of Christ">
+              <label class="form_checkbox_label">Life of Christ</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Miracles of Jesus">
+              <label class="form_checkbox_label">Miracles of Jesus</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="New Testament">
+              <label class="form_checkbox_label">New Testament</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Early Church">
+              <label class="form_checkbox_label">Early Church</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Paul's Letters">
+              <label class="form_checkbox_label">Paul's Letters</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Judges">
+              <label class="form_checkbox_label">Judges</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Exodus">
+              <label class="form_checkbox_label">Exodus</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Prophets">
+              <label class="form_checkbox_label">Prophets</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="In the Beginning">
+              <label class="form_checkbox_label">In the Beginning</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Complete the verse">
+              <label class="form_checkbox_label">Complete the verse</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Cool Facts">
+              <label class="form_checkbox_label">Cool Facts</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Old Testament Quotes">
+              <label class="form_checkbox_label">Old Testament Quotes</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="New Testament Quotes">
+              <label class="form_checkbox_label">New Testament Quotes</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Revelation">
+              <label class="form_checkbox_label">Revelation</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="New Testament Geography">
+              <label class="form_checkbox_label">New Testament Geography</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Old Testament Geography">
+              <label class="form_checkbox_label">Old Testament Geography</label>
+
+              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Name that Book">
+              <label class="form_checkbox_label">Name that Book</label>
+            </div>
+            <ul id="ErrorBox"></ul>
+            <input class="form_submit" type="submit" name="" value="Submit Question">
+          </div>
+        </form>
+    </main>
+    <footer class="main-footer">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="contribute.html">Contribute</a>
+      </nav>
+      <div>
+        <a href="https://github.com/ChildrensChurchGames" target="_blank"><img src="img/GitHub-Mark-Light-64px.png" alt="GitHub logo"></a>
+      </div>
+    </footer>
+  </body>
+</html>
