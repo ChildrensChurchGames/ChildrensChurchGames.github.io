@@ -169,6 +169,7 @@ main {
   order: 2;
   color: #3d1400;
   text-align: center;
+  padding: 0 10px;
   text-shadow: 2px 2px 5px rgba(20, 20, 20, 0.75);
 }
 
@@ -286,7 +287,7 @@ main {
   display: flex;
   flex: row wrap;
   margin: 0 auto;
-  width: 960px;
+  width: calc(100% - 40px);
   height: 100px;
   padding: 0 20px;
   justify-content: space-between;
@@ -308,4 +309,11 @@ main {
   padding: 4px;
   color: #ddd;
   text-shadow: 2px 2px 5px rgba(20, 20, 20, 0.75)
+}
+
+
+@media screen and (min-width: 1000px) {
+  .footer-main {
+    width: 960px;
+  }
 }
