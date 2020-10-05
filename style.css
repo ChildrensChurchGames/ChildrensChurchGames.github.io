@@ -313,7 +313,7 @@ main {
 
 
 @media screen and (min-width: 1000px) {
-  .footer-main {
+  .main-footer {
     width: 960px;
   }
 }
