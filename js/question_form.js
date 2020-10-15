@@ -82,9 +82,9 @@ $(document).ready(function(){
       $(element).removeClass("form_error")
     },
     submitHandler: function(form) {
-      contactsubmitted=true;
-      $("#contact_form").slideUp(1200,function(){
-        $("#contact_submitted").slideDown(400, function(){
+      questionsubmitted=true;
+      $("#question_form").slideUp(1200,function(){
+        $("#question_submitted").slideDown(400, function(){
           document.getElementById("contact_form").reset()
         })
       });
