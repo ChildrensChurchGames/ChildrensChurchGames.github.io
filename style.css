@@ -325,6 +325,10 @@ main {
   display: none;
 }
 
+#form_container {
+  padding-top: 10px
+}
+
 @media screen and (min-width: 1000px) {
   .contribute-main {
     width: 1000px;
