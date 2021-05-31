@@ -31,99 +31,197 @@
 
         <p id='question_submitted' name='question_submitted'>Thank you for your help. It is greatly appreciated. Would you like to <a href="contribute.html">submit another question?</a></p>
 
-        <form class="form" name="question_form" id="question_form" target="question_hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSdf4yjj_qOtrWIPfqruTwOegwE9j4ei5MdxKdgQRDhzcJEzeg/formResponse?">
-          <div class= "form_container">
-            <label class="form_label" for="entry.809144564">Question</label>
-            <input class="form_input" type="text" name="entry.809144564" id="entry.809144564">
+        <div id="form_container">
+          <label class="toggle">
+            <input type="checkbox" id="cToggle"/>
+            <span class="slider"></span>
+          </label>
 
-            <label class="form_label" for="entry.187849648">Correct Answer</label>
-            <input class="form_input" type="text" name="entry.187849648" id="entry.187849648">
+          <form class="form" name="mc_question_form" id="mc_question_form" target="question_hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSdf4yjj_qOtrWIPfqruTwOegwE9j4ei5MdxKdgQRDhzcJEzeg/formResponse?">
+            <div class= "form_container">
+              <label class="form_label" for="entry.809144564">Question</label>
+              <input class="form_input" type="text" name="entry.809144564" id="entry.809144564">
 
-            <label class="form_label" for="entry.1062808255">Incorrect Answer 1</label>
-            <input class="form_input" type="text" name="entry.1062808255" id="entry.1062808255">
+              <label class="form_label" for="entry.187849648">Correct Answer</label>
+              <input class="form_input" type="text" name="entry.187849648" id="entry.187849648">
 
-            <label class="form_label" for="entry.22923817">Incorrect Answer 2</label>
-            <input class="form_input" type="text" name="entry.22923817" id="entry.22923817">
+              <label class="form_label" for="entry.1062808255">Incorrect Answer 1</label>
+              <input class="form_input" type="text" name="entry.1062808255" id="entry.1062808255">
 
-            <label class="form_label" for="entry.1592649018">Incorrect Answer 3</label>
-            <input class="form_input" type="text" name="entry.1592649018" id="entry.1592649018">
+              <label class="form_label" for="entry.22923817">Incorrect Answer 2</label>
+              <input class="form_input" type="text" name="entry.22923817" id="entry.22923817">
 
-            <label class="form_label" for="entry.1578457137">Difficulty</label>
-            <input class="form_input" type="number" name="entry.1578457137" id="entry.1578457137" min=1 max=10 value=1>
+              <label class="form_label" for="entry.1592649018">Incorrect Answer 3</label>
+              <input class="form_input" type="text" name="entry.1592649018" id="entry.1592649018">
 
-            <label class="form_label">Categories (select at least one)</label>
+              <label class="form_label" for="entry.1578457137">Difficulty</label>
+              <input class="form_input" type="number" name="entry.1578457137" id="entry.1578457137" min=1 max=10 value=1>
 
-            <div class="form_checkbox_container">
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="OT">
-              <label class="form_checkbox_label">Old Testament</label>
+              <label class="form_label">Categories (select at least one)</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Fa">
-              <label class="form_lcheckbox_abel">Families</label>
+              <div class="form_checkbox_container">
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="OT">
+                <label class="form_checkbox_label">Old Testament</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Pa">
-              <label class="form_checkbox_label">Patriarchs</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Fa">
+                <label class="form_lcheckbox_abel">Families</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Fr">
-              <label class="form_checkbox_label">Friendship</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Pa">
+                <label class="form_checkbox_label">Patriarchs</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="K">
-              <label class="form_checkbox_label">Kings</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Fr">
+                <label class="form_checkbox_label">Friendship</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="LoC">
-              <label class="form_checkbox_label">Life of Christ</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="K">
+                <label class="form_checkbox_label">Kings</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="MoJ">
-              <label class="form_checkbox_label">Miracles of Jesus</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="LoC">
+                <label class="form_checkbox_label">Life of Christ</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NT">
-              <label class="form_checkbox_label">New Testament</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="MoJ">
+                <label class="form_checkbox_label">Miracles of Jesus</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="EC">
-              <label class="form_checkbox_label">Early Church</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NT">
+                <label class="form_checkbox_label">New Testament</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="PL">
-              <label class="form_checkbox_label">Paul's Letters</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="EC">
+                <label class="form_checkbox_label">Early Church</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="J">
-              <label class="form_checkbox_label">Judges</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="PL">
+                <label class="form_checkbox_label">Paul's Letters</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="E">
-              <label class="form_checkbox_label">Exodus</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="J">
+                <label class="form_checkbox_label">Judges</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Prop">
-              <label class="form_checkbox_label">Prophets</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="E">
+                <label class="form_checkbox_label">Exodus</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="ItB">
-              <label class="form_checkbox_label">In the Beginning</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Prop">
+                <label class="form_checkbox_label">Prophets</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="CtV">
-              <label class="form_checkbox_label">Complete the verse</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="ItB">
+                <label class="form_checkbox_label">In the Beginning</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="RBK">
-              <label class="form_checkbox_label">Random Bible Knowledge</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="CtV">
+                <label class="form_checkbox_label">Complete the verse</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="OTQ">
-              <label class="form_checkbox_label">Old Testament Quotes</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="RBK">
+                <label class="form_checkbox_label">Random Bible Knowledge</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NTQ">
-              <label class="form_checkbox_label">New Testament Quotes</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="OTQ">
+                <label class="form_checkbox_label">Old Testament Quotes</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Rev">
-              <label class="form_checkbox_label">Revelation</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NTQ">
+                <label class="form_checkbox_label">New Testament Quotes</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NTG">
-              <label class="form_checkbox_label">New Testament Geography</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Rev">
+                <label class="form_checkbox_label">Revelation</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="OTG">
-              <label class="form_checkbox_label">Old Testament Geography</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NTG">
+                <label class="form_checkbox_label">New Testament Geography</label>
 
-              <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NtB">
-              <label class="form_checkbox_label">Name that Book</label>
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="OTG">
+                <label class="form_checkbox_label">Old Testament Geography</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NtB">
+                <label class="form_checkbox_label">Name that Book</label>
+              </div>
+              <ul id="MCErrorBox"></ul>
+              <input class="form_submit" type="submit" name="" value="Submit Question">
             </div>
-            <ul id="ErrorBox"></ul>
-            <input class="form_submit" type="submit" name="" value="Submit Question">
-          </div>
-        </form>
+          </form>
+
+          <form class="form" name="tf_question_form" id="tf_question_form" target="question_hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSc9OV01rljs9HOeAjWODm-lD3Rxfb-DIzbc_y766PPJWjw8GQ/formResponse?">
+            <div class= "form_container">
+              <label class="form_label" for="entry.809144564">Question</label>
+              <input class="form_input" type="text" name="entry.809144564" id="entry.809144564">
+
+
+              <label class="form_label">Answer</label>
+              <div class="form_radio_container">
+                <input type="radio" value="true" name="entry.187849648" id="entry.187849648">
+                <label class="form_checkbox_label">True</label>
+
+                <input type="radio" value="false" name="entry.187849648" id="entry.187849648">
+                <label class="form_checkbox_label">False</label>
+              </div>
+              <label class="form_label" for="entry.1578457137">Difficulty</label>
+              <input class="form_input" type="number" name="entry.1578457137" id="entry.1578457137" min=1 max=10 value=1>
+
+              <label class="form_label">Categories (select at least one)</label>
+
+              <div class="form_checkbox_container">
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="OT">
+                <label class="form_checkbox_label">Old Testament</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Fa">
+                <label class="form_lcheckbox_abel">Families</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Pa">
+                <label class="form_checkbox_label">Patriarchs</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Fr">
+                <label class="form_checkbox_label">Friendship</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="K">
+                <label class="form_checkbox_label">Kings</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="LoC">
+                <label class="form_checkbox_label">Life of Christ</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="MoJ">
+                <label class="form_checkbox_label">Miracles of Jesus</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NT">
+                <label class="form_checkbox_label">New Testament</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="EC">
+                <label class="form_checkbox_label">Early Church</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="PL">
+                <label class="form_checkbox_label">Paul's Letters</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="J">
+                <label class="form_checkbox_label">Judges</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="E">
+                <label class="form_checkbox_label">Exodus</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Prop">
+                <label class="form_checkbox_label">Prophets</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="ItB">
+                <label class="form_checkbox_label">In the Beginning</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="CtV">
+                <label class="form_checkbox_label">Complete the verse</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="RBK">
+                <label class="form_checkbox_label">Random Bible Knowledge</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="OTQ">
+                <label class="form_checkbox_label">Old Testament Quotes</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NTQ">
+                <label class="form_checkbox_label">New Testament Quotes</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="Rev">
+                <label class="form_checkbox_label">Revelation</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NTG">
+                <label class="form_checkbox_label">New Testament Geography</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="OTG">
+                <label class="form_checkbox_label">Old Testament Geography</label>
+
+                <input type="checkbox" name="entry.1014671867" id="entry.1014671867" value="NtB">
+                <label class="form_checkbox_label">Name that Book</label>
+              </div>
+              <ul id="TFErrorBox"></ul>
+              <input class="form_submit" type="submit" name="" value="Submit Question">
+            </div>
+          </form>
+        </div>
     </main>
     <footer class="main-footer">
       <nav>
